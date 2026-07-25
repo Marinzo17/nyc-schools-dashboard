@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("C:\\Users\\garba\\OneDrive\\Documents\\CODINGS\\schools.csv")
+df = pd.read_csv("schools.csv")
 df['total_score'] = df['average_math'] + df['average_reading'] + df['average_writing']
 
 st.set_page_config(layout="wide")
